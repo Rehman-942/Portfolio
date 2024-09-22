@@ -1,6 +1,32 @@
+"use client";
+
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import PortfolioLayout from "@/layout/PortfolioLayout";
 
 const page = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_jumfcub",  // EmailJS service ID
+      "template_m5guv9i", // EmailJS template ID
+      form.current,
+      "v_cio44FtDNs83qLs"   // EmailJS public key
+    ).then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send the message, please try again.");
+        }
+      );
+  };
+
   return (
     <PortfolioLayout noFooter>
       <div>
@@ -36,15 +62,11 @@ const page = () => {
                     <p className="mil-upper mil-mb-30">Email</p>
                     <p>
                       <a href="mailto:rehmanafzal942@gmail.com">rehmanafzal942@gmail.com</a>
-                      <br />
-                      {/* <a href="mailto:hello@portfolio.co">projects@portfolio.co</a> */}
                     </p>
                   </div>
                   <div className="mil-contact-card mil-mb-30">
                     <p className="mil-upper mil-mb-30">Chats</p>
                     <p>
-                      {/* <a href="tel:+123456789">Telegram</a>
-                      <br /> */}
                       <a href="https://wa.me/923249089617" target="_blank">WhatsApp</a> +92 324 9089617
                     </p>
                   </div>
@@ -54,7 +76,7 @@ const page = () => {
                   </div>
                 </div>
                 <div className="col-lg-7">
-                  <form id="cform" className="cform" method="post">
+                  <form ref={form} onSubmit={sendEmail} id="cform" className="cform" method="post">
                     <label className="mil-upper">
                       Your full name <span className="mil-accent">*</span>
                     </label>
@@ -66,7 +88,7 @@ const page = () => {
                     <label className="mil-upper">
                       Your phone number
                     </label>
-                    <input type="tel" className="mil-mb-30" name="tel" />
+                    <input type="tel" className="mil-mb-30" name="phone" />
                     <label className="mil-upper">
                       Subject <span className="mil-accent">*</span>
                     </label>
@@ -74,17 +96,7 @@ const page = () => {
                     <label className="mil-upper">
                       Tell me your ideas <span className="mil-accent">*</span>
                     </label>
-                    <textarea
-                      className="mil-mb-30"
-                      name="message"
-                      defaultValue={""}
-                    />
-                    {/* <label className="mil-checkbox mil-mb-30">
-                      by sending the message you accept the{" "}
-                      <a href="#.">terms and conditions</a>.
-                      <input type="checkbox" name="checkmark" defaultChecked />
-                      <span className="mil-checkmark" />
-                    </label> */}
+                    <textarea className="mil-mb-30" name="message" required />
                     <button type="submit" className="mil-button">
                       Submit
                     </button>

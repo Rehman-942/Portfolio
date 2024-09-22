@@ -1,4 +1,38 @@
+"use client"; // Ensures this is treated as a Client Component
+
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+
 const Contact = () => {
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
+
+  // Handle form submission
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log('form.current', form.current);
+
+    // Send form data via EmailJS
+    // emailjs
+    //   .sendForm(
+    //     "service_jumfcub",    // EmailJS service ID
+    //     "template_m5guv9i",   // EmailJS template ID
+    //     form.current,
+    //     "v_cio44FtDNs83qLs"     // EmailJS public key
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setMessageSent(true); // Show success message
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //       alert("Failed to send the message. Please try again.");
+    //     }
+    //   );
+  };
+
   return (
     <div className="mil-section mil-op-space-90">
       <div
@@ -16,19 +50,16 @@ const Contact = () => {
               <p className="mil-upper mil-mb-30">Email</p>
               <p>
                 <a href="mailto:rehmanafzal942@gmail.com">rehmanafzal942@gmail.com</a>
-                <br />
-                {/* <a href="mailto:business.rehmanafzal@gmail.com">business.rehmanafzal@gmail.com</a> */}
               </p>
             </div>
             <div className="mil-contact-card mil-mb-30">
               <p className="mil-upper mil-mb-30">Phone</p>
-              <p>
-                +92 324 908 9617
-              </p>
+              <p>+92 324 908 9617</p>
             </div>
           </div>
           <div className="col-lg-7">
-            <form id="cform-two" className="cform-two" method="post">
+            {/* Contact form */}
+            <form ref={form} onSubmit={sendEmail} id="cform-two" className="cform-two" method="post">
               <div className="row">
                 <div className="col-lg-6">
                   <label className="mil-upper">
@@ -54,25 +85,23 @@ const Contact = () => {
                   />
                 </div>
                 <div className="col-lg-12 mil-text-row">
-                  {/* <label className="mil-checkbox mil-mb-30">
-                    by sending, I accept the{" "}
-                    <a href="#.">terms and conditions</a>.
-                    <input type="checkbox" name="checkmark" defaultChecked="" />
-                    <span className="mil-checkmark" />
-                  </label> */}
                   <button type="submit" className="mil-button">
                     Submit
                   </button>
                 </div>
               </div>
             </form>
-            <div className="alert-success" style={{ display: "none" }}>
-              <h5>Thanks, your message is sent successfully.</h5>
-            </div>
+            {/* Success message */}
+            {messageSent && (
+              <div className="alert-success">
+                <h5>Thanks, your message is sent successfully.</h5>
+              </div>
+            )}
           </div>
         </div>
       </div>
     </div>
   );
 };
+
 export default Contact;

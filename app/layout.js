@@ -5,6 +5,7 @@ import "./globals.css";
 import "@css/plugins/magnific-popup.css";
 import "@css/plugins/swiper.min.css";
 import "@fonts/font-awesome/css/all.min.css";
+import Head from "next/head";
 
 import "@css/style.css";
 

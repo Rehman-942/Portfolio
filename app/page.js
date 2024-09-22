@@ -1,12 +1,12 @@
 "use client";
-// import About from "@/components/About";
+import About from "@/components/About";
 import Banner from "@/components/Banner";
-// import Contact from "@/components/Contact";
+import Contact from "@/components/Contact";
 // import Education from "@/components/Education";
 // import Experience from "@/components/Experience";
 // import Reviews from "@/components/Reviews";
-// import Services from "@/components/Services";
-// import Skills from "@/components/Skills";
+import Services from "@/components/Services";
+import Skills from "@/components/Skills";
 import Pagination from "@/layout/Pagination";
 import PortfolioLayout from "@/layout/PortfolioLayout";
 import { onepage } from "@/utility/onepage";
@@ -22,13 +22,13 @@ const Index = () => {
       <Pagination direction={"left"} />
       <div className="mil-onepage">
         <Banner />
-        {/* <About />
+        <About />
         <Skills />
-        <Education />
-        <Experience />
+        {/* <Education /> */}
+        {/* <Experience /> */}
         <Services />
-        <Reviews />
-        <Contact /> */}
+        {/* <Reviews /> */}
+        <Contact />
       </div>
     </PortfolioLayout>
   );

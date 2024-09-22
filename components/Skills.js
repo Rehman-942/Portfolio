@@ -17,45 +17,7 @@ const Skills = () => {
           <div className="col-xl-2" />
           <div className="col-xl-10">
             <div className="row">
-              <div className="col-xl-6 mil-mb-40">
-                <div className="mil-text-row">
-                  <div className="mil-icon-box">
-                    <div className="mil-text-icon no-textured">
-                      <i className="fab fa-figma" />
-                    </div>
-                  </div>
-                  <div className="mil-progress-inline">
-                    <span className="mil-upper">Figma</span>
-                    <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "60%" }}>
-                        <span className="mil-upper mil-upper-sm mil-accent">
-                          60%
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-6 mil-mb-40">
-                <div className="mil-text-row">
-                  <div className="mil-icon-box">
-                    <div className="mil-text-icon no-textured">
-                      <i className="fab fa-php" />
-                    </div>
-                  </div>
-                  <div className="mil-progress-inline">
-                    <span className="mil-upper">PHP / C++</span>
-                    <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "80%" }}>
-                        <span className="mil-upper mil-upper-sm mil-accent">
-                          80%
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-6 mil-mb-40">
+            <div className="col-xl-6 mil-mb-40">
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
@@ -63,13 +25,13 @@ const Skills = () => {
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper">JavaScript</span>
+                    <span className="mil-upper mil-capitalize">JavaScript, Golang, Rust</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "75%" }}>
+                      {/* <div className="mil-progress" style={{ width: "85%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          75%
+                          85%
                         </span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -82,13 +44,13 @@ const Skills = () => {
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper">React / Next.js</span>
+                    <span className="mil-upper mil-capitalize">React Js, Svelte Js, Vue Js</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "75%" }}>
+                      {/* <div className="mil-progress" style={{ width: "80%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          75%
+                          80%
                         </span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -97,17 +59,55 @@ const Skills = () => {
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
-                      <i className="fab fa-html5" />
+                      <i className="fab fa-node" />
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper">HTML5 / CSS3</span>
+                    <span className="mil-upper mil-capitalize">Node Js</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "90%" }}>
+                      {/* <div className="mil-progress" style={{ width: "80%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          90%
+                          80%
                         </span>
-                      </div>
+                      </div> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6 mil-mb-40">
+                <div className="mil-text-row">
+                  <div className="mil-icon-box">
+                    <div className="mil-text-icon no-textured">
+                      <i className="fas fa-database" />
+                    </div>
+                  </div>
+                  <div className="mil-progress-inline">
+                    <span className="mil-upper mil-capitalize">PostgreSQL, MongoDB</span>
+                    <div className="mil-progress-track">
+                      {/* <div className="mil-progress" style={{ width: "80%" }}>
+                        <span className="mil-upper mil-upper-sm mil-accent">
+                          80%
+                        </span>
+                      </div> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6 mil-mb-40">
+                <div className="mil-text-row">
+                  <div className="mil-icon-box">
+                    <div className="mil-text-icon no-textured">
+                      <i className="fab fa-jenkins" />
+                    </div>
+                  </div>
+                  <div className="mil-progress-inline">
+                    <span className="mil-upper mil-capitalize">Jenkins, Cloudflare, Firebase</span>
+                    <div className="mil-progress-track">
+                      {/* <div className="mil-progress" style={{ width: "80%" }}>
+                        <span className="mil-upper mil-upper-sm mil-accent">
+                          80%
+                        </span>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -116,17 +116,17 @@ const Skills = () => {
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
-                      <i className="fab fa-vuejs" />
+                      <i className="fab fa-wordpress" />
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper">Vue.js</span>
+                    <span className="mil-upper mil-capitalize">Wordpress</span>
                     <div className="mil-progress-track">
-                      <div className="mil-progress" style={{ width: "55%" }}>
+                      {/* <div className="mil-progress" style={{ width: "80%" }}>
                         <span className="mil-upper mil-upper-sm mil-accent">
-                          55%
+                          80%
                         </span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

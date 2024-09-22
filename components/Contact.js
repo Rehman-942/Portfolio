@@ -15,16 +15,15 @@ const Contact = () => {
             <div className="mil-contact-card mil-mb-30">
               <p className="mil-upper mil-mb-30">Email</p>
               <p>
-                <a href="mailto:hello@portfolio.co">hello@portfolio.co</a>
+                <a href="mailto:rehmanafzal942@gmail.com">rehmanafzal942@gmail.com</a>
                 <br />
-                <a href="mailto:hello@portfolio.co">projects@portfolio.co</a>
+                {/* <a href="mailto:business.rehmanafzal@gmail.com">business.rehmanafzal@gmail.com</a> */}
               </p>
             </div>
             <div className="mil-contact-card mil-mb-30">
               <p className="mil-upper mil-mb-30">Phone</p>
               <p>
-                <a href="tel+5636366060">+ 56 3636 60 60</a> <br />
-                <a href="tel+5663630606">+ 56 6363 06 06</a>
+                +92 324 908 9617
               </p>
             </div>
           </div>
@@ -35,13 +34,13 @@ const Contact = () => {
                   <label className="mil-upper">
                     Your full name <span className="mil-accent">*</span>
                   </label>
-                  <input type="text" className="mil-mb-30" name="name" />
+                  <input type="text" required className="mil-mb-30" name="name" />
                 </div>
                 <div className="col-lg-6">
                   <label className="mil-upper">
                     Your email address <span className="mil-accent">*</span>
                   </label>
-                  <input type="email" className="mil-mb-30" name="email" />
+                  <input type="email" required className="mil-mb-30" name="email" />
                 </div>
                 <div className="col-lg-12">
                   <label className="mil-upper">
@@ -49,17 +48,18 @@ const Contact = () => {
                   </label>
                   <textarea
                     className="mil-mb-30"
+                    required
                     name="message"
                     defaultValue={""}
                   />
                 </div>
                 <div className="col-lg-12 mil-text-row">
-                  <label className="mil-checkbox mil-mb-30">
+                  {/* <label className="mil-checkbox mil-mb-30">
                     by sending, I accept the{" "}
                     <a href="#.">terms and conditions</a>.
                     <input type="checkbox" name="checkmark" defaultChecked="" />
                     <span className="mil-checkmark" />
-                  </label>
+                  </label> */}
                   <button type="submit" className="mil-button">
                     Submit
                   </button>

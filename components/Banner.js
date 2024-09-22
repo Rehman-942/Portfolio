@@ -17,14 +17,13 @@ const Banner = () => {
                   style={{ top: 0, left: "-82%" }}
                 />
                 <p className="mil-upper mil-mb-30">
-                  WEB <span className="mil-accent">and</span> Mobile App Developer
+                  Full Stack Engineer
                 </p>
                 <h1 className="mil-up mil-mb-40">Rehman Afzal</h1>
                 <div className="mil-short mil-left-offset">
                   <p className="mil-mb-30">
-                    From Lahore, Pakistan. I have rich experience in Web and Mobile
-                    App Development. I am also skilled in making AI chatbots and Chrome
-                    Extensions. Let's turn your vision into reality.
+                    From Lahore, Pakistan. I have rich experience in Web App Development and deployment.
+                    I am also skilled in making AI chatbots and Chrome Extensions. Let's turn your vision into reality.
                   </p>
                   <div className="mil-buttons-frame">
                     {/* <Link legacyBehavior href="/portfolio">
@@ -40,7 +39,7 @@ const Banner = () => {
           </div>
           <div className="col-xl-5">
             <img
-              src="img/faces/6.jpg"
+              src="img/faces/banner.jpg"
               alt="face"
               className="mil-banner-image"
             />

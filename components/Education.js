@@ -12,9 +12,9 @@ const Education = () => {
               <p className="mil-upper mil-mb-30">Certificates</p>
               <h2 className="mil-up mil-mb-60">Education</h2>
               <p>
-                Extensive education in developing web pages using: HTML5, CSS3,
-                SASS, JavaScript, React JS, Angular JS, JQuery, JSON, Node.js,
-                Bootstrap.
+                Extensive education in developing web applications using: HTML5, CSS3,
+                JavaScript, MERN Stack (React JS and Node Js), Svelte Js, JQuery, PostgreSQL, MongoDB
+                Bootstrap, Wordpress.
               </p>
             </div>
           </div>
@@ -65,10 +65,10 @@ const Education = () => {
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Bachelors of FineArt
+                  Bachelors in Electrical Engineering
                 </p>
                 <p className="mil-upper mil-upper-sm mil-mb-30">
-                  2017 <span className="mil-accent">to</span> 2018
+                  NUST, Pakistan 2018 <span className="mil-accent">to</span> 2022
                 </p>
                 <p>
                   It has survived not only five centuries, but also the leap

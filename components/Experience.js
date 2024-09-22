@@ -14,7 +14,7 @@ const Experience = () => {
       />
       <div className="container">
         <p className="mil-upper mil-mb-30">
-          A Decade of <span className="mil-accent">work</span>
+          Crafting Exceptional <span className="mil-accent">Experiences</span>
         </p>
         <h2 className="mil-up mil-mb-60">Experience</h2>
         <div className="row">
@@ -100,13 +100,13 @@ const Experience = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
-                    <p className="mil-upper mil-text-lg mil-mb-15">Envato</p>
+                    <p className="mil-upper mil-text-lg mil-mb-15">Opus AI</p>
                     <p className="mil-upper mil-mb-30">
-                      2017 <span className="mil-accent">to</span> 2019
+                    2022 <span className="mil-accent">to</span> 2024
                     </p>
                     <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting.
+                    Started as an Associate Software Engineer, contributing to impactful projects, 
+                    and was later promoted to Software Engineer.
                     </p>
                   </div>
                 </div>
@@ -115,10 +115,10 @@ const Experience = () => {
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
                     <p className="mil-upper mil-text-lg mil-mb-15">
-                      Themeforest
+                      Game Train
                     </p>
                     <p className="mil-upper mil-mb-30">
-                      2014 <span className="mil-accent">to</span> 2017
+                      June 2022 <span className="mil-accent">to</span>Oct 2022
                     </p>
                     <p>
                       It has survived not only five centuries, but also the leap

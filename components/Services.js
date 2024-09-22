@@ -20,14 +20,10 @@ const Services = () => {
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Web Development
-                </p>
-                <p className="mil-upper mil-mb-30">
-                  $29 <span className="mil-accent">per hour</span>
+                  Web App Development
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
+                  Creating responsive and high-performance web applications tailored to your needs.
                 </p>
               </div>
             </div>
@@ -38,13 +34,9 @@ const Services = () => {
                 <i className="fas fa-palette" />
               </div>
               <div className="mil-box-text">
-                <p className="mil-upper mil-text-lg mil-mb-15">Branding</p>
-                <p className="mil-upper mil-mb-30">
-                  $39 <span className="mil-accent">per hour</span>
-                </p>
+                <p className="mil-upper mil-text-lg mil-mb-15">Mobile Apps</p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
+                  Developing user-friendly mobile applications that enhance engagement and accessibility.
                 </p>
               </div>
             </div>
@@ -56,14 +48,55 @@ const Services = () => {
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Server Managment
-                </p>
-                <p className="mil-upper mil-mb-30">
-                  $49 <span className="mil-accent">per hour</span>
+                  AI Chatbot
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
+                  Building intelligent chatbots to streamline customer interactions and improve support.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-4">
+            <div className="mil-icon-box mil-mb-30">
+              <div className="mil-text-icon">
+                <i className="fas fa-server" />
+              </div>
+              <div className="mil-box-text">
+                <p className="mil-upper mil-text-lg mil-mb-15">
+                  Chrome Extensions
+                </p>
+                <p>
+                  Create custom Chrome extensions to enhance browser functionality and improve user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-4">
+            <div className="mil-icon-box mil-mb-30">
+              <div className="mil-text-icon">
+                <i className="fas fa-server" />
+              </div>
+              <div className="mil-box-text">
+                <p className="mil-upper mil-text-lg mil-mb-15">
+                  Server Management
+                </p>
+                <p>
+                  Ensuring seamless server operations with expert management and optimization.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-4">
+            <div className="mil-icon-box mil-mb-30">
+              <div className="mil-text-icon">
+                <i className="fas fa-server" />
+              </div>
+              <div className="mil-box-text">
+                <p className="mil-upper mil-text-lg mil-mb-15">
+                  Wordpress
+                </p>
+                <p>
+                  Delivering customized WordPress sites that are both functional and visually appealing.
                 </p>
               </div>
             </div>

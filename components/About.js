@@ -17,38 +17,32 @@ const About = () => {
                 <div className="mil-text-center">
                   <div className="mil-about-person-2 mil-mb-30">
                     <img
-                      src="img/faces/clients/4.jpg"
-                      alt="Sophie Miller"
+                      src="img/faces/about.jpg"
+                      alt="Rehman Afzal"
                       className="mil-avatar"
                     />
                   </div>
                   <p className="mil-upper mil-mb-30">
-                    Graphic <span className="mil-accent">and</span> Web
-                    Developer
+                    Full Stack Engineer
                   </p>
-                  <h2 className="mil-up mil-mb-30">Devies Byrne</h2>
+                  <h2 className="mil-up mil-mb-30">Rehman Afzal</h2>
                   <div className="row justify-content-center">
                     <div className="col-xl-8">
                       <div className="mil-text-center">
                         <p className="mil-mb-30">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book. It has
-                          survived not only five centuries, but also the leap
-                          into electronic typesetting, remaining essentially
-                          unchanged. It was popularised in the 1960s with the
-                          release of Letraset sheets containing Lorem Ipsum
-                          passages, and more recently with desktop publishing
-                          software like Aldus PageMaker including versions of
-                          Lorem Ipsum.
+                        I am a passionate Software Engineer specializing in web application development. 
+                        My expertise spans React.js, Svelte.js, and Next.js, allowing me to craft responsive, 
+                        high-performance applications. On the backend, I work with Node.js, Golang, and Rust, 
+                        leveraging MongoDB and PostgreSQL for seamless integration and efficient data management. 
+                        I’ve built a range of solutions, including CRMs, Job Application Platforms, Chrome Extensions, 
+                        Article websites and E-commerce stores. Proficient in website hosting and deployment, 
+                        I am dedicated to optimizing user experiences through innovative solutions and continuous improvements.
                         </p>
-                        <img
+                        {/* <img
                           src="img/signature.png"
                           alt="signature"
                           className="mil-signature"
-                        />
+                        /> */}
                       </div>
                     </div>
                   </div>

@@ -17,7 +17,7 @@ const About = () => {
                 <div className="mil-text-center">
                   <div className="mil-about-person-2 mil-mb-30">
                     <img
-                      src="img/faces/about.jpg"
+                      src="img/faces/banner.jpg"
                       alt="Rehman Afzal"
                       className="mil-avatar"
                     />

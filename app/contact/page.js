@@ -67,12 +67,12 @@ const page = () => {
                   <div className="mil-contact-card mil-mb-30">
                     <p className="mil-upper mil-mb-30">Chats</p>
                     <p>
-                      <a href="https://wa.me/923249089617" target="_blank">WhatsApp</a> +92 324 9089617
+                      <a href="https://wa.me/923460940149" target="_blank">WhatsApp</a> +92 346 0940149
                     </p>
                   </div>
                   <div className="mil-contact-card mil-mb-90">
                     <p className="mil-upper mil-mb-30">Phone</p>
-                    +92 324 908 9617
+                    +92 346 094 0149
                   </div>
                 </div>
                 <div className="col-lg-7">

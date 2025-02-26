@@ -8,7 +8,7 @@ const Header = () => {
     <div className="mil-top-panel">
       <Link legacyBehavior href="/">
         <a className="mil-logo">
-          {/* <img src="/img/logo.png" alt="logo" /> */}
+          <img src="/img/logo.png" alt="logo" />
         </a>
       </Link>
       <Nav />

@@ -93,7 +93,7 @@ const PortfolioIsotope = () => {
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
+                  <p className="mil-upper mil-accent mil-mb-15">AI based</p>
                   <h4 className="mil-up">OPUS.ai</h4>
                 </div>
               </div>
@@ -109,7 +109,7 @@ const PortfolioIsotope = () => {
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
+                  <p className="mil-upper mil-accent mil-mb-15">Crome Extention</p>
                   <h4 className="mil-up">COMN</h4>
                 </div>
               </div>
@@ -126,8 +126,8 @@ const PortfolioIsotope = () => {
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
-                  <h4 className="mil-up">Zolara Tech System.com/</h4>
+                  <p className="mil-upper mil-accent mil-mb-15">CRM</p>
+                  <h4 className="mil-up">Zolara Tech System</h4>
                 </div>
               </div>
             </Link>
@@ -142,7 +142,7 @@ const PortfolioIsotope = () => {
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
+                  <p className="mil-upper mil-accent mil-mb-15">Educational website</p>
                   <h4 className="mil-up">DraperUniversity</h4>
                 </div>
               </div>
@@ -151,7 +151,7 @@ const PortfolioIsotope = () => {
 
 
           <div className="mil-grid-item fil-link">
-            <Link legacyBehavior target="_blanck" href="https://pk.hireside.com/">
+            <Link legacyBehavior target="_blanck" href="https://parsecinstitute.org/">
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
                   <img src="/img/portfolio/55.jpg" alt="cover" />
@@ -160,8 +160,8 @@ const PortfolioIsotope = () => {
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
-                  <h4 className="mil-up">HireSide</h4>
+                  <p className="mil-upper mil-accent mil-mb-15">WebSite</p>
+                  <h4 className="mil-up">ParsecInstitute</h4>
                 </div>
               </div>
             </Link>
@@ -176,7 +176,7 @@ const PortfolioIsotope = () => {
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">Link</p>
+                  <p className="mil-upper mil-accent mil-mb-15">SAAS Web App</p>
                   <h4 className="mil-up">AIdream</h4>
                 </div>
               </div>

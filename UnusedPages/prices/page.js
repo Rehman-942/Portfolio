@@ -44,7 +44,7 @@ const page = () => {
                       <li>Web Development + Hosting, Domain</li>
                       <li>Advertising on Google Ads &amp; Facebook</li>
                     </ul>
-                    <Link legacyBehavior href="/publication">
+                    <Link legacyBehavior href="/contact">
                       <a className="mil-button mil-type-2">Start My Project</a>
                     </Link>
                   </div>
@@ -75,7 +75,7 @@ const page = () => {
                       <li>Advertising on Google Ads &amp; Facebook</li>
                       <li>Content Writing &amp; Social Media</li>
                     </ul>
-                    <Link legacyBehavior href="/publication">
+                    <Link legacyBehavior href="/contact">
                       <a className="mil-button">Start My Project</a>
                     </Link>
                   </div>
@@ -104,7 +104,7 @@ const page = () => {
                       <li>Content Writing &amp; Social Media</li>
                       <li>Server Managment, Security services</li>
                     </ul>
-                    <Link legacyBehavior href="/publication">
+                    <Link legacyBehavior href="/contact">
                       <a className="mil-button mil-type-2">Start My Project</a>
                     </Link>
                   </div>

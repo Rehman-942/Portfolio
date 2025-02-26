@@ -27,11 +27,11 @@ const Nav = () => {
               Portfolio
             </Link>
           </li>
-          {/* <li className={pathname == "/blog" ? "mil-active" : ""}>
+          <li className={pathname == "/blog" ? "mil-active" : ""}>
             <Link legacyBehavior href="/blog">
               Blog
             </Link>
-          </li> */}
+          </li>
           <li className={pathname == "/contact" ? "mil-active" : ""}>
             <Link legacyBehavior href="/contact">
               Contact Me

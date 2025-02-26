@@ -6,14 +6,14 @@ const blogs = [
   {
     id: 1,
     title: "Commodo Dolor a Bibendum",
-    image: "/img/blog/1.png",
+    image: "/img/blog/11.png",
     tags: ["Teamwork", "Nature", "Landscape"],
     date: "30 August - 2022",
   },
   {
     id: 2,
     title: "Fringilla Ligula il Pharetra",
-    image: "/img/blog/2.png",
+    image: "/img/blog/22.png",
     tags: ["Teamwork", "Nature", "Landscape"],
     date: "30 August - 2022",
   },

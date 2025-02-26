@@ -7,31 +7,19 @@ import { useEffect, useState } from "react";
 const blogs = [
   {
     id: 1,
-    title: "Commodo Dolor a Bibendum",
-    image: "/img/blog/1.png",
+    title: "A Beginners Guide to MERN Stack Development",
+    image: "/img/blog/11.png",
     tags: ["Teamwork", "Nature", "Landscape"],
-    date: "30 August - 2022",
+    date: "1 - jan - 2025",
+    des: "The world of web development is rapidly evolving, and full-stack development has become more accessible than ever. One of the most popular technology stacks today is MERN — a powerful combination of MongoDB, Express.js, React, and Node.js."
   },
   {
     id: 2,
-    title: "Fringilla Ligula il Pharetra",
-    image: "/img/blog/2.png",
+    title: "Optimizing MERN Applications",
+    image: "/img/blog/22.png",
     tags: ["Teamwork", "Nature", "Landscape"],
-    date: "30 August - 2022",
-  },
-  {
-    id: 3,
-    title: "Morbi leo risus as porta eget",
-    image: "/img/blog/3.png",
-    tags: ["Teamwork", "Nature", "Landscape"],
-    date: "30 August - 2022",
-  },
-  {
-    id: 4,
-    title: "Fringilla Ligula il Pharetra",
-    image: "/img/blog/1.png",
-    tags: ["Teamwork", "Nature", "Landscape"],
-    date: "30 August - 2022",
+    date: "1 - Feb - 2025",
+    des: "MERN stack applications need to be optimized for performance and scalability to ensure a seamless user experience. Below are some key tips to enhance your MERN applications."
   },
 ];
 
@@ -93,10 +81,7 @@ const page = () => {
                   </div>
                   <div className="mil-card-text">
                     <p>
-                      It was popularised in the 1960s with the release of
-                      Letraset sheets containing Lorem Ipsum passages, and more
-                      recently with desktop publishing software like Aldus
-                      PageMaker including versions of Lorem ..
+                    {blog.des}
                     </p>
                   </div>
                 </div>

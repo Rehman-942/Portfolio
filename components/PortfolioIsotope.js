@@ -50,11 +50,11 @@ const PortfolioIsotope = () => {
             <li>
               <a
                 href="#"
-                className={`c-pointer ${activeBtn("fil-link")}`}
-                onClick={handleFilterKeyChange("fil-link")}
-                data-filter=".fil-link"
+                className={`c-pointer ${activeBtn("saas")}`}
+                onClick={handleFilterKeyChange("saas")}
+                data-filter=".saas"
               >
-                Link
+                SAAS
               </a>
             </li>
             <li>
@@ -64,7 +64,7 @@ const PortfolioIsotope = () => {
                 className={`c-pointer ${activeBtn("fil-gallery")}`}
                 onClick={handleFilterKeyChange("fil-gallery")}
               >
-                Gallery
+                WEbsite
               </a>
             </li>
             <li>
@@ -74,7 +74,7 @@ const PortfolioIsotope = () => {
                 className={`c-pointer ${activeBtn("fil-image")}`}
                 onClick={handleFilterKeyChange("fil-image")}
               >
-                Image
+                UIUX
               </a>
             </li>
           </ul>
@@ -83,7 +83,7 @@ const PortfolioIsotope = () => {
       <div className="container">
         <div className="mil-portfolio-grid mil-mb-30">
           <div className="grid-sizer" />
-          <div className="mil-grid-item fil-link">
+          <div className="mil-grid-item saas">
             <Link legacyBehavior href="/project">
               <div className="mil-portfolio-item mil-square-item mil-mb-60">
                 <div className="mil-cover">
@@ -99,7 +99,7 @@ const PortfolioIsotope = () => {
               </div>
             </Link>
           </div>
-          <div className="mil-grid-item fil-link">
+          <div className="mil-grid-item saas">
             <Link legacyBehavior href="https://chromewebstore.google.com/detail/comn/bohnipoebbbnfangppfemibbahldcalp?hl=en-GB&utm_source=ext_sidebar">
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
@@ -116,7 +116,7 @@ const PortfolioIsotope = () => {
             </Link>
           </div>
           
-          <div className="mil-grid-item fil-link">
+          <div className="mil-grid-item saas">
             <Link legacyBehavior href="https://www.zolaratechsystem.com/">
               <div className="mil-portfolio-item mil-square-item mil-mb-60">
                 <div className="mil-cover">
@@ -132,7 +132,7 @@ const PortfolioIsotope = () => {
               </div>
             </Link>
           </div>
-          <div className="mil-grid-item fil-link">
+          <div className="mil-grid-item saas">
             <Link legacyBehavior target="_blanck" href="https://draperuniversity.com/">
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
@@ -150,7 +150,7 @@ const PortfolioIsotope = () => {
           </div>
 
 
-          <div className="mil-grid-item fil-link">
+          <div className="mil-grid-item saas">
             <Link legacyBehavior target="_blanck" href="https://parsecinstitute.org/">
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
@@ -166,7 +166,7 @@ const PortfolioIsotope = () => {
               </div>
             </Link>
           </div>
-          <div className="mil-grid-item fil-link">
+          <div className="mil-grid-item ">
             <Link legacyBehavior href="https://aidream.work/">
               <div className="mil-portfolio-item mil-square-item mil-mb-60">
                 <div className="mil-cover">

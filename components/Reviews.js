@@ -37,16 +37,12 @@ const Reviews = () => {
                     <div className="col-lg-1" />
                     <div className="col-lg-7">
                       <p className="mil-mb-30">
-                        It has survived not only five centuries, but also the
-                        leap into electronic typesetting, remaining essentially
-                        unchanged. It was popularised in the 1960s with the
-                        release of Letraset sheets containing Lorem Ipsum
-                        passages.
+                      Rehman Afzal delivered an exceptional web application using the MERN stack. His attention to detail, clean code, and ability to understand project requirements made the process seamless. Highly recommended!
                       </p>
                       <p className="mil-upper mil-text-lg mil-mb-15">
-                        Isabella <span className="mil-accent">Wilson</span>
+                      John <span className="mil-accent">D.</span>
                       </p>
-                      <p className="mil-mb-30"> Director at Geands Hotel</p>
+                      <p className="mil-mb-30"> Founder at TechNest</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -60,16 +56,12 @@ const Reviews = () => {
                     <div className="col-lg-1" />
                     <div className="col-lg-7">
                       <p className="mil-mb-30">
-                        It has survived not only five centuries, but also the
-                        leap into electronic typesetting, remaining essentially
-                        unchanged. It was popularised in the 1960s with the
-                        release of Letraset sheets containing Lorem Ipsum
-                        passages.
+                      Rehman turned my vision into reality with a stunning and high-performing web app. His expertise in React and Node.js, combined with a great work ethic, made collaboration effortless. Will definitely hire him again!
                       </p>
                       <p className="mil-upper mil-text-lg mil-mb-15">
-                        Isabella <span className="mil-accent">Wilson</span>
+                      Sarah <span className="mil-accent">M.</span>
                       </p>
-                      <p className="mil-mb-30"> Director at Geands Hotel</p>
+                      <p className="mil-mb-30">CEO at DigitalWave</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -83,16 +75,12 @@ const Reviews = () => {
                     <div className="col-lg-1" />
                     <div className="col-lg-7">
                       <p className="mil-mb-30">
-                        It has survived not only five centuries, but also the
-                        leap into electronic typesetting, remaining essentially
-                        unchanged. It was popularised in the 1960s with the
-                        release of Letraset sheets containing Lorem Ipsum
-                        passages.
+                      We faced several technical challenges, but Rehman tackled them with ease. His deep understanding of MongoDB, Express, and API integrations helped us build a scalable and efficient solution. A true professional!"
                       </p>
                       <p className="mil-upper mil-text-lg mil-mb-15">
-                        Isabella <span className="mil-accent">Wilson</span>
+                      David <span className="mil-accent">R.</span>
                       </p>
-                      <p className="mil-mb-30"> Director at Geands Hotel</p>
+                      <p className="mil-mb-30">Product Manager at InnovateX</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -106,16 +94,12 @@ const Reviews = () => {
                     <div className="col-lg-1" />
                     <div className="col-lg-7">
                       <p className="mil-mb-30">
-                        It has survived not only five centuries, but also the
-                        leap into electronic typesetting, remaining essentially
-                        unchanged. It was popularised in the 1960s with the
-                        release of Letraset sheets containing Lorem Ipsum
-                        passages.
+                      From start to finish, Rehman was clear in communication and delivered beyond expectations. His MERN stack expertise ensured a smooth development process, and the final product was top-notch!
                       </p>
                       <p className="mil-upper mil-text-lg mil-mb-15">
-                        Isabella <span className="mil-accent">Wilson</span>
+                        Lisa <span className="mil-accent">K.</span>
                       </p>
-                      <p className="mil-mb-30"> Director at Geands Hotel</p>
+                      <p className="mil-mb-30"> Startup Founder</p>
                     </div>
                   </div>
                 </SwiperSlide>

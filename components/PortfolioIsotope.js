@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/layout/Footer";
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
@@ -60,21 +61,21 @@ const PortfolioIsotope = () => {
             <li>
               <a
                 href="#"
-                data-filter=".fil-gallery"
-                className={`c-pointer ${activeBtn("fil-gallery")}`}
-                onClick={handleFilterKeyChange("fil-gallery")}
+                data-filter=".website"
+                className={`c-pointer ${activeBtn("website")}`}
+                onClick={handleFilterKeyChange("website")}
               >
-                WEbsite
+                Wesite
               </a>
             </li>
             <li>
               <a
                 href="#"
-                data-filter=".fil-image"
-                className={`c-pointer ${activeBtn("fil-image")}`}
-                onClick={handleFilterKeyChange("fil-image")}
+                data-filter=".extention"
+                className={`c-pointer ${activeBtn("extention")}`}
+                onClick={handleFilterKeyChange("extention")}
               >
-                UIUX
+                Crome Extention
               </a>
             </li>
           </ul>
@@ -83,8 +84,10 @@ const PortfolioIsotope = () => {
       <div className="container">
         <div className="mil-portfolio-grid mil-mb-30">
           <div className="grid-sizer" />
-          <div className="mil-grid-item saas">
-            <Link legacyBehavior href="/project">
+
+          <div className="mil-grid-item website">
+            <Link legacyBehavior href="https://opus.ai/" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
               <div className="mil-portfolio-item mil-square-item mil-mb-60">
                 <div className="mil-cover">
                   <img src="/img/portfolio/1.png" alt="Opus.ai" />
@@ -93,14 +96,16 @@ const PortfolioIsotope = () => {
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">AI based</p>
+                  <p className="mil-upper mil-accent mil-mb-15">AI based Website</p>
                   <h4 className="mil-up">OPUS.ai</h4>
                 </div>
               </div>
+              </a>
             </Link>
           </div>
-          <div className="mil-grid-item saas">
-            <Link legacyBehavior href="https://chromewebstore.google.com/detail/comn/bohnipoebbbnfangppfemibbahldcalp?hl=en-GB&utm_source=ext_sidebar">
+          <div className="mil-grid-item extention">
+            <Link legacyBehavior href="https://chromewebstore.google.com/detail/comn/bohnipoebbbnfangppfemibbahldcalp?hl=en-GB&utm_source=ext_sidebar" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
                   <img src="/img/portfolio/4.png" alt="cover" />
@@ -113,11 +118,13 @@ const PortfolioIsotope = () => {
                   <h4 className="mil-up">COMN</h4>
                 </div>
               </div>
+              </a>
             </Link>
           </div>
           
           <div className="mil-grid-item saas">
-            <Link legacyBehavior href="https://www.zolaratechsystem.com/">
+            <Link legacyBehavior href="https://www.zolaratechsystem.com/" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
               <div className="mil-portfolio-item mil-square-item mil-mb-60">
                 <div className="mil-cover">
                   <img src="/img/portfolio/33.png" alt="cover" />
@@ -126,14 +133,16 @@ const PortfolioIsotope = () => {
                   </div>
                 </div>
                 <div className="mil-project-descr">
-                  <p className="mil-upper mil-accent mil-mb-15">CRM</p>
+                  <p className="mil-upper mil-accent mil-mb-15">CRM - SAAS</p>
                   <h4 className="mil-up">Zolara Tech System</h4>
                 </div>
               </div>
+            </a>
             </Link>
           </div>
-          <div className="mil-grid-item saas">
-            <Link legacyBehavior target="_blanck" href="https://draperuniversity.com/">
+          <div className="mil-grid-item website">
+            <Link legacyBehavior target="_blanck" href="https://draperuniversity.com/" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
                   <img src="/img/portfolio/2.jpg" alt="cover" />
@@ -146,12 +155,14 @@ const PortfolioIsotope = () => {
                   <h4 className="mil-up">DraperUniversity</h4>
                 </div>
               </div>
+              </a>
             </Link>
           </div>
 
 
-          <div className="mil-grid-item saas">
-            <Link legacyBehavior target="_blanck" href="https://parsecinstitute.org/">
+          <div className="mil-grid-item website">
+            <Link legacyBehavior target="_blanck" href="https://parsecinstitute.org/" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
                   <img src="/img/portfolio/55.jpg" alt="cover" />
@@ -164,10 +175,12 @@ const PortfolioIsotope = () => {
                   <h4 className="mil-up">ParsecInstitute</h4>
                 </div>
               </div>
+              </a>
             </Link>
           </div>
-          <div className="mil-grid-item ">
-            <Link legacyBehavior href="https://aidream.work/">
+          <div className="mil-grid-item saas">
+            <Link legacyBehavior href="https://aidream.work/" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
               <div className="mil-portfolio-item mil-square-item mil-mb-60">
                 <div className="mil-cover">
                   <img src="/img/portfolio/44.jpg" alt="cover" />
@@ -180,6 +193,7 @@ const PortfolioIsotope = () => {
                   <h4 className="mil-up">AIdream</h4>
                 </div>
               </div>
+              </a>
             </Link>
           </div>
         </div>
@@ -188,12 +202,12 @@ const PortfolioIsotope = () => {
             <li className="mil-active">
               <a href="#.">01</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#.">02</a>
             </li>
             <li>
               <a href="#.">03</a>
-            </li>
+            </li> */}
           </ul>
           <div className="mil-pagination-nav">
             <div className="mil-slider-nav mil-mb-30">
@@ -232,6 +246,7 @@ const PortfolioIsotope = () => {
           </div>
         </div>
       </div>
+      
     </Fragment>
   );
 };

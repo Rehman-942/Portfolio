@@ -15,8 +15,7 @@ const Reviews = () => {
           </p>
           <h2 className="mil-up mil-mb-60">Testimonials</h2>
           <p className="mil-mb-60">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua.
+            Trusted by Clients, Built for Success!
           </p>
         </div>
         <div className="mil-divider" />

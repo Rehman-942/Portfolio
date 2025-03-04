@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import Footer from "@/layout/Footer";
 
 const Contact = () => {
   const form = useRef();

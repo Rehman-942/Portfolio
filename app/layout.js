@@ -9,6 +9,13 @@ import "@fonts/font-awesome/css/all.min.css";
 import Head from "next/head";
 import Script from "next/script";
 import "@css/style.css";
+import { Poppins } from "next/font/google";
+
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Yeh font weight define karta hai
+});
 
 const jost = Jost({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],

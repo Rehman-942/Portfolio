@@ -1,3 +1,11 @@
+
+import { Poppins } from "next/font/google";
+
+// Poppins font import
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["900", "700"], // Font weight define karein
+});
 const About = () => {
   return (
     <div className="mil-section mil-op-space-90">
@@ -15,17 +23,11 @@ const About = () => {
             <div className="row">
               <div className="col-xl-12">
                 <div className="mil-text-center">
-                  <div className="mil-about-person-2 mil-mb-30">
-                    <img
-                      src="img/faces/banner.jpg"
-                      alt="Rehman Afzal"
-                      className="mil-avatar"
-                    />
-                  </div>
+               
                   <p className="mil-upper mil-mb-30">
                     Full Stack Engineer
                   </p>
-                  <h2 className="mil-up mil-mb-30">Rehman Afzal</h2>
+                  <h2 className={`mil-up mil-mb-30 ${poppins.className}`}>Rehman Afzal</h2>
                   <div className="row justify-content-center">
                     <div className="col-xl-8">
                       <div className="mil-text-center">

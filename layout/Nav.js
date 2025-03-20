@@ -2,42 +2,39 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Fragment, useState } from "react";
+import { Poppins } from "next/font/google";
+
+// Poppins font import
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["900", "700"], 
+  display: "swap",
+});
 
 const Nav = () => {
   const pathname = usePathname();
   const [toggle, setToggle] = useState(false);
+
   return (
     <Fragment>
-      <nav className={toggle ? "mil-active" : ""}>
+      <nav className={`${toggle ? "mil-active" : ""} ${poppins.className}`}>
         <ul>
-          <li
-            className={
-              pathname.includes("index") || pathname == "/" ? "mil-active" : ""
-            }
-          >
+          <li className={pathname.includes("index") || pathname === "/" ? "mil-active" : ""}>
             <Link legacyBehavior href="/">Home</Link>
           </li>
-          {/* <li className={pathname == "/prices" ? "mil-active" : ""}>
-            <Link legacyBehavior href="/prices">
-              Prices
-            </Link>
-          </li> */}
-          <li className={pathname == "/portfolio" ? "mil-active" : ""}>
-            <Link legacyBehavior href="/portfolio">
-              Portfolio
-            </Link>
+          <li className={pathname === "/portfolio" ? "mil-active" : ""}>
+            <Link legacyBehavior href="/portfolio">Portfolio</Link>
           </li>
-          {/* <li className={pathname == "/blog" ? "mil-active" : ""}>
-            <Link legacyBehavior href="/blog">
-              Blog
-            </Link>
-          </li> */}
-          <li className={pathname == "/contact" ? "mil-active" : ""}>
-            <Link legacyBehavior href="/contact">
-              Contact Me
-            </Link>
+          <li className={pathname === "/contact" ? "mil-active" : ""}>
+            <Link legacyBehavior href="/contact">Contact Me</Link>
           </li>
-            <a className="mil-button" href="https://drive.google.com/file/d/1aSDSMdbiFJnDYgACL8T9A544YGr1pdlC/view?usp=sharing" target="_blank">Download CV</a>
+          <a
+            className="mil-button"
+            href="https://drive.google.com/file/d/1aSDSMdbiFJnDYgACL8T9A544YGr1pdlC/view?usp=sharing"
+            target="_blank"
+          >
+            Download CV
+          </a>
         </ul>
       </nav>
       <div
@@ -49,4 +46,5 @@ const Nav = () => {
     </Fragment>
   );
 };
+
 export default Nav;

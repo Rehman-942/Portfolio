@@ -1,3 +1,11 @@
+import { Poppins } from "next/font/google";
+
+// Poppins font import
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["900", "700"], // Font weight define karein
+});
+
 const Skills = () => {
   return (
     <div className="mil-section mil-op-space-90">
@@ -11,13 +19,18 @@ const Skills = () => {
           <p className="mil-upper mil-mb-30">
             My great <span className="mil-accent">work</span>
           </p>
-          <h2 className="mil-up mil-mb-60">Ability or Skill</h2>
+
+          {/* Poppins font applied here */}
+          <h2 className={`mil-up mil-mb-60 ${poppins.className}`}>
+            Ability or Skill
+          </h2>
+
         </div>
         <div className="row">
           <div className="col-xl-2" />
           <div className="col-xl-10">
             <div className="row">
-            <div className="col-xl-6 mil-mb-40">
+              <div className="col-xl-6 mil-mb-40">
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
@@ -25,14 +38,10 @@ const Skills = () => {
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper mil-capitalize">JavaScript, Golang, Rust</span>
-                    <div className="mil-progress-track">
-                      {/* <div className="mil-progress" style={{ width: "85%" }}>
-                        <span className="mil-upper mil-upper-sm mil-accent">
-                          85%
-                        </span>
-                      </div> */}
-                    </div>
+                    <span className="mil-upper mil-capitalize">
+                      JavaScript, Golang, Rust
+                    </span>
+                    <div className="mil-progress-track"></div>
                   </div>
                 </div>
               </div>
@@ -44,14 +53,10 @@ const Skills = () => {
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper mil-capitalize">React Js, Svelte Js, Vue Js</span>
-                    <div className="mil-progress-track">
-                      {/* <div className="mil-progress" style={{ width: "80%" }}>
-                        <span className="mil-upper mil-upper-sm mil-accent">
-                          80%
-                        </span>
-                      </div> */}
-                    </div>
+                    <span className="mil-upper mil-capitalize">
+                      React Js, Svelte Js, Vue Js
+                    </span>
+                    <div className="mil-progress-track"></div>
                   </div>
                 </div>
               </div>
@@ -64,13 +69,7 @@ const Skills = () => {
                   </div>
                   <div className="mil-progress-inline">
                     <span className="mil-upper mil-capitalize">Node Js</span>
-                    <div className="mil-progress-track">
-                      {/* <div className="mil-progress" style={{ width: "80%" }}>
-                        <span className="mil-upper mil-upper-sm mil-accent">
-                          80%
-                        </span>
-                      </div> */}
-                    </div>
+                    <div className="mil-progress-track"></div>
                   </div>
                 </div>
               </div>
@@ -82,14 +81,10 @@ const Skills = () => {
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper mil-capitalize">PostgreSQL, MongoDB</span>
-                    <div className="mil-progress-track">
-                      {/* <div className="mil-progress" style={{ width: "80%" }}>
-                        <span className="mil-upper mil-upper-sm mil-accent">
-                          80%
-                        </span>
-                      </div> */}
-                    </div>
+                    <span className="mil-upper mil-capitalize">
+                      PostgreSQL, MongoDB
+                    </span>
+                    <div className="mil-progress-track"></div>
                   </div>
                 </div>
               </div>
@@ -101,14 +96,10 @@ const Skills = () => {
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper mil-capitalize">Jenkins, Cloudflare, Firebase</span>
-                    <div className="mil-progress-track">
-                      {/* <div className="mil-progress" style={{ width: "80%" }}>
-                        <span className="mil-upper mil-upper-sm mil-accent">
-                          80%
-                        </span>
-                      </div> */}
-                    </div>
+                    <span className="mil-upper mil-capitalize">
+                      Jenkins, Cloudflare, Firebase
+                    </span>
+                    <div className="mil-progress-track"></div>
                   </div>
                 </div>
               </div>
@@ -121,13 +112,7 @@ const Skills = () => {
                   </div>
                   <div className="mil-progress-inline">
                     <span className="mil-upper mil-capitalize">Wordpress</span>
-                    <div className="mil-progress-track">
-                      {/* <div className="mil-progress" style={{ width: "80%" }}>
-                        <span className="mil-upper mil-upper-sm mil-accent">
-                          80%
-                        </span>
-                      </div> */}
-                    </div>
+                    <div className="mil-progress-track"></div>
                   </div>
                 </div>
               </div>
@@ -138,4 +123,5 @@ const Skills = () => {
     </div>
   );
 };
+
 export default Skills;

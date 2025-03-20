@@ -729,12 +729,12 @@ pagination
   background: rgb(255, 255, 255);
 }
 .mil-pagination.mil-pagination-left {
-  right: auto;
-  left: 50px;
+  right: 80px;
+  left: auto;
 }
 .mil-pagination.mil-pagination-left .mil-dot:before {
-  left: auto;
-  right: -100px;
+  left:-100px;
+  right: auto ;
   padding-left: 20px;
   padding-right: 0;
   text-align: left;
@@ -862,16 +862,15 @@ top panel
 }
 .mil-top-panel nav {
   position: relative;
-  border-bottom: solid 2px #010101;
+ 
   padding: 0 40px 0 30px;
 }
 .mil-top-panel nav::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   left: 7px;
   bottom: -9px;
   right: -5px;
-  border-bottom: 2px solid rgba(16, 16, 16, 0.18);
 }
 .mil-top-panel nav ul {
   display: flex;
@@ -911,7 +910,7 @@ top panel
   left: calc(50% - 1px);
   width: 2px;
   height: 10px;
-  background-color: #010101;
+  
 }
 .mil-top-panel nav ul li ul {
   pointer-events: none;
@@ -1095,17 +1094,17 @@ social panel
   pointer-events: all;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   display: flex;
   align-items: center;
   height: 80px;
   padding: 0 30px;
-  border-top: solid 2px #101010;
+
 }
 .mil-social-panel::after {
   content: "";
   position: absolute;
-  left: 7px;
+  left: px;
   top: 5px;
   right: -5px;
   border-bottom: 2px solid rgba(16, 16, 16, 0.18);
@@ -2151,6 +2150,7 @@ portfolio
   width: 33.333%;
   padding: 0 30px;
 }
+
 .mil-portfolio-grid .mil-grid-item.mil-50 {
   width: 50%;
 }

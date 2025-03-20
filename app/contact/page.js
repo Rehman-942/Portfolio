@@ -41,7 +41,7 @@ const page = () => {
                 Contact <span className="mil-accent">me</span>
               </p>
               <h2 className="mil-up mil-mb-30">Let's get you an estimate</h2>
-              <p className="mil-left-offset">
+              <p className="">
                 Contact us today for a personalized estimate tailored to your project needs!
               </p>
             </div>

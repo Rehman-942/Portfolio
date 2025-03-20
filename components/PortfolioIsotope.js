@@ -78,12 +78,22 @@ const PortfolioIsotope = () => {
                 Crome Extention
               </a>
             </li>
+            <li>
+              <a
+                href="#"
+                data-filter=".Animation"
+                className={`c-pointer ${activeBtn("Animation")}`}
+                onClick={handleFilterKeyChange("Animation")}
+              >
+                Automation
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div className="container">
         <div className="mil-portfolio-grid mil-mb-30">
-          <div className="grid-sizer" />
+          <div className="grid-sizer">
 
           <div className="mil-grid-item website">
             <Link legacyBehavior href="https://opus.ai/" passHref>
@@ -178,6 +188,69 @@ const PortfolioIsotope = () => {
               </a>
             </Link>
           </div>
+       
+           <div className="flex-wrap">
+
+
+           <div className="mil-grid-item Animation" >
+            <Link legacyBehavior target="_blanck" href="https://www.upwork.com/freelancers/~01d189b12f39474084?p=1892244867826491392" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+              <div className="mil-portfolio-item mil-long-item mil-mb-60">
+                <div className="mil-cover">
+                  <img src="/img/portfolio/image (2).png" alt="cover" className="img-fluid" />
+                  <div className="mil-hover-link">
+                    <i className="fas fa-link" />
+                  </div>
+                </div>
+                <div className="mil-project-descr">
+                  
+                  <h4 className="mil-up"> Google Forms to Google Sheets</h4>
+                </div>
+              </div>
+              </a>
+            </Link>
+          </div>
+
+
+          <div className="mil-grid-item Animation" >
+            <Link legacyBehavior target="_blanck" href="https://www.upwork.com/freelancers/~01d189b12f39474084?p=1894790776275922944" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+              <div className="mil-portfolio-item mil-long-item mil-mb-60">
+                <div className="mil-cover">
+                  <img src="/img/portfolio/image (1).png" alt="cover" />
+                  <div className="mil-hover-link">
+                    <i className="fas fa-link" />
+                  </div>
+                </div>
+                <div className="mil-project-descr">
+                  
+                  <h4 className="mil-up"> API Router and Web Integration</h4>
+                </div>
+              </div>
+              </a>
+            </Link>
+          </div>
+
+          <div className="mil-grid-item Animation" >
+            <Link legacyBehavior target="_blanck" href="https://www.upwork.com/freelancers/~01d189b12f39474084?p=1892244867826491392" passHref>
+            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+              <div className="mil-portfolio-item mil-long-item mil-mb-60">
+                <div className="mil-cover">
+                  <img src="/img/portfolio/image (2).png" alt="cover" className="img-fluid" />
+                  <div className="mil-hover-link">
+                    <i className="fas fa-link" />
+                  </div>
+                </div>
+                <div className="mil-project-descr">
+                  
+                  <h4 className="mil-up">Seamless Google Integration</h4>
+                </div>
+              </div>
+              </a>
+            </Link>
+          </div>
+
+          </div>
           <div className="mil-grid-item saas">
             <Link legacyBehavior href="https://aidream.work/" passHref>
             <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
@@ -196,6 +269,8 @@ const PortfolioIsotope = () => {
               </a>
             </Link>
           </div>
+
+        </div>
         </div>
         <div className="mil-pagination-panel">
           <ul className="mil-pagination-numbers">

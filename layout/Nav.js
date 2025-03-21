@@ -16,8 +16,8 @@ const Nav = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleHomeClick = (e) => {
-    e.preventDefault(); // Prevent Next.js default navigation
-    window.location.reload(); // 🔄 Reload the page
+    e.preventDefault(); // Next.js default navigation roknay k liye
+    window.location.href = "/"; // Home page par le janay k liye
   };
 
   return (
@@ -25,13 +25,17 @@ const Nav = () => {
       <nav className={`${toggle ? "mil-active" : ""} ${poppins.className}`}>
         <ul>
           <li className={pathname === "/" ? "mil-active" : ""}>
-            <Link href="/" onClick={handleHomeClick}>Home</Link>
+            <a href="/" onClick={handleHomeClick}>Home</a>
           </li>
           <li className={pathname === "/portfolio" ? "mil-active" : ""}>
-            <Link href="/portfolio">Portfolio</Link>
+            <Link legacyBehavior href="/portfolio">
+              <a>Portfolio</a>
+            </Link>
           </li>
           <li className={pathname === "/contact" ? "mil-active" : ""}>
-            <Link href="/contact">Contact Me</Link>
+            <Link legacyBehavior href="/contact">
+              <a>Contact Me</a>
+            </Link>
           </li>
           <a
             className="mil-button"

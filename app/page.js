@@ -19,8 +19,8 @@ const Index = () => {
 
   return (
     <PortfolioLayout>
-      <Pagination direction={"left"} />
       <div className="mil-onepage">
+      <Pagination direction={"left"} />
         <Banner />
         <About />
         <Skills />

@@ -604,9 +604,9 @@ page
   align-items: center;
 }
 .mil-onepage .mil-section .container, .mil-onepage .mil-section .no-gutters {
-  -webkit-transform: translateY(90px) scale(0.95);
-  transform: translateY(90px) scale(0.95);
-  opacity: 0;
+  /* -webkit-transform: translateY(90px) scale(0.95);
+  transform: translateY(90px) scale(0.95); */
+  
   -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
   -webkit-transition-delay: 0s;
@@ -696,7 +696,7 @@ pagination
   display: block;
   padding-right: 20px;
   position: absolute;
-  left: -100px;
+  /* left: -100px; */
   width: 100px;
   opacity: 0;
   text-align: right;
@@ -1193,7 +1193,7 @@ footer
   padding: 6px 12px;
   border-radius: 4px;
   font-size: 14px;
-  max-width: 200px;
+  max-width: 230px;
   white-space: nowrap; 
   z-index: 1;
   opacity: 0;

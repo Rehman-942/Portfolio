@@ -7,7 +7,7 @@ import { Poppins } from "next/font/google";
 // Poppins font import
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["900", "700"], 
+  weight: ["900", "700"],
   display: "swap",
 });
 
@@ -15,18 +15,23 @@ const Nav = () => {
   const pathname = usePathname();
   const [toggle, setToggle] = useState(false);
 
+  const handleHomeClick = (e) => {
+    e.preventDefault(); // Prevent Next.js default navigation
+    window.location.reload(); // 🔄 Reload the page
+  };
+
   return (
     <Fragment>
       <nav className={`${toggle ? "mil-active" : ""} ${poppins.className}`}>
         <ul>
-          <li className={pathname.includes("index") || pathname === "/" ? "mil-active" : ""}>
-            <Link legacyBehavior href="/">Home</Link>
+          <li className={pathname === "/" ? "mil-active" : ""}>
+            <Link href="/" onClick={handleHomeClick}>Home</Link>
           </li>
           <li className={pathname === "/portfolio" ? "mil-active" : ""}>
-            <Link legacyBehavior href="/portfolio">Portfolio</Link>
+            <Link href="/portfolio">Portfolio</Link>
           </li>
           <li className={pathname === "/contact" ? "mil-active" : ""}>
-            <Link legacyBehavior href="/contact">Contact Me</Link>
+            <Link href="/contact">Contact Me</Link>
           </li>
           <a
             className="mil-button"

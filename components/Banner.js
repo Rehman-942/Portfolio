@@ -19,7 +19,7 @@ const Banner = () => {
       }}
     >
       <div className="container-full">
-        <div className="row no-gutters align-items-center justify-content-between ps-5">
+        <div className="row no-gutters align-items-center justify-content-between ps-lg-5 ">
           <div className="col-xl-7">
             <div className="mil-p-120-120">
               <div

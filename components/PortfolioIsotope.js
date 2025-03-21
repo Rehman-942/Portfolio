@@ -204,7 +204,7 @@ const PortfolioIsotope = () => {
                 </div>
                 <div className="mil-project-descr">
                   
-                  <h4 className="mil-up"> Google Forms to Google Sheets</h4>
+                  <h4 className="mil-up">Automated Data Processing</h4>
                 </div>
               </div>
               </a>
@@ -224,7 +224,7 @@ const PortfolioIsotope = () => {
                 </div>
                 <div className="mil-project-descr">
                   
-                  <h4 className="mil-up"> API Router and Web Integration</h4>
+                  <h4 className="mil-up">Automated Lead Management</h4>
                 </div>
               </div>
               </a>
@@ -232,7 +232,7 @@ const PortfolioIsotope = () => {
           </div>
 
           <div className="mil-grid-item Animation" >
-            <Link legacyBehavior target="_blanck" href="https://www.upwork.com/freelancers/~01d189b12f39474084?p=1892244867826491392" passHref>
+            <Link legacyBehavior target="_blanck" href="https://www.upwork.com/freelancers/~01d189b12f39474084?p=1894770979516788736" passHref>
             <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
               <div className="mil-portfolio-item mil-long-item mil-mb-60">
                 <div className="mil-cover">
@@ -243,7 +243,7 @@ const PortfolioIsotope = () => {
                 </div>
                 <div className="mil-project-descr">
                   
-                  <h4 className="mil-up">Seamless Google Integration</h4>
+                  <h4 className="mil-up">Social Media Automation</h4>
                 </div>
               </div>
               </a>

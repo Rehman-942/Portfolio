@@ -616,8 +616,8 @@ page
   opacity: 1;
   -webkit-transform: translateY(0) scale(1);
   transform: translateY(0) scale(1);
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 @media screen and (max-width: 1200px) {
   .mil-onepage .mil-section {

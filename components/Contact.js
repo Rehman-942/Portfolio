@@ -3,36 +3,30 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import Footer from "@/layout/Footer";
 
 const Contact = () => {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
 
-  // Handle form submission
-  const sendEmail = (e) => {
-    e.preventDefault();
-    console.log('form.current', form.current);
-
-    // Send form data via EmailJS
-    // emailjs
-    //   .sendForm(
-    //     "service_jumfcub",    // EmailJS service ID
-    //     "template_m5guv9i",   // EmailJS template ID
-    //     form.current,
-    //     "v_cio44FtDNs83qLs"     // EmailJS public key
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       setMessageSent(true); // Show success message
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //       alert("Failed to send the message. Please try again.");
-    //     }
-    //   );
-  };
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm(
+        "service_jumfcub",  // EmailJS service ID
+        "template_m5guv9i", // EmailJS template ID
+        form.current,
+        "v_cio44FtDNs83qLs"   // EmailJS public key
+      ).then(
+          (result) => {
+            console.log(result.text);
+            setMessageSent("Message sent successfully!");
+          },
+          (error) => {
+            console.log(error.text);
+            alert("Failed to send the message, please try again.");
+          }
+        );
+    };
 
   return (
     <div className="mil-section mil-op-space-90">

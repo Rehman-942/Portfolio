@@ -607,8 +607,8 @@ page
   -webkit-transform: translateY(90px) scale(0.95);
   transform: translateY(90px) scale(0.95);
   opacity: 0;
-  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
@@ -616,8 +616,8 @@ page
   opacity: 1;
   -webkit-transform: translateY(0) scale(1);
   transform: translateY(0) scale(1);
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 @media screen and (max-width: 1200px) {
   .mil-onepage .mil-section {

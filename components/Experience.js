@@ -20,8 +20,9 @@ const Experience = () => {
         <div className="row">
           <div className="col-lg-6">
             <p className="mil-mb-60">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              3+ years of professional experience building full-stack web applications,
+              integrating AI-powered features, and shipping production-ready solutions
+              across agency and product environments.
             </p>
           </div>
           <div className="col-lg-6">
@@ -70,13 +71,16 @@ const Experience = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
-                    <p className="mil-upper mil-text-lg mil-mb-15">Freelance</p>
+                    <p className="mil-upper mil-text-lg mil-mb-15">Zolara Global Tech</p>
                     <p className="mil-upper mil-mb-30">
-                      <span className="mil-accent">today</span>
+                      <span className="mil-accent">JavaScript Developer</span> &mdash; Sept 2024 to Sept 2025
                     </p>
                     <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting.
+                      Architected and integrated AI-powered features into client applications by connecting
+                      OpenAI APIs and custom ML models, delivering intelligent chat assistants, automated
+                      content generation, and personalized recommendation systems. Led backend development
+                      using Node.js and NestJS, integrated Stripe for payments, and containerized services
+                      with Docker.
                     </p>
                   </div>
                 </div>
@@ -85,14 +89,16 @@ const Experience = () => {
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
                     <p className="mil-upper mil-text-lg mil-mb-15">
-                      Agency MacLL
+                      OpusAI
                     </p>
                     <p className="mil-upper mil-mb-30">
-                      2019 <span className="mil-accent">to</span> 2022
+                      <span className="mil-accent">Software Engineer (Remote)</span> &mdash; Oct 2022 to Sept 2024
                     </p>
                     <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting.
+                      Led development of multiple dynamic websites using Svelte.js and React.js, backed by
+                      Node.js and Firebase. Built a production-grade Chrome Extension with Svelte, designed
+                      a Rust-powered backend integrated with PostgreSQL, and implemented internationalization
+                      with svelte-i18n across multiple languages.
                     </p>
                   </div>
                 </div>
@@ -100,29 +106,14 @@ const Experience = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
-                    <p className="mil-upper mil-text-lg mil-mb-15">Opus AI</p>
+                    <p className="mil-upper mil-text-lg mil-mb-15">Game Train</p>
                     <p className="mil-upper mil-mb-30">
-                    2022 <span className="mil-accent">to</span> 2024
+                      <span className="mil-accent">Internship, MERN Stack Developer</span> &mdash; Jun 2022 to Sept 2022
                     </p>
                     <p>
-                    Started as an Associate Software Engineer, contributing to impactful projects, 
-                    and was later promoted to Software Engineer.
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="mil-icon-box mil-type-2 mil-mb-30">
-                  <div className="mil-box-text">
-                    <p className="mil-upper mil-text-lg mil-mb-15">
-                      Game Train
-                    </p>
-                    <p className="mil-upper mil-mb-30">
-                      June 2022 <span className="mil-accent">to</span>Oct 2022
-                    </p>
-                    <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting.
+                      Designed and implemented responsive e-commerce pages using React.js with modern UI/UX
+                      principles. Built RESTful APIs and backend services in Node.js with MongoDB, and
+                      leveraged third-party APIs to expand website features and deliver dynamic content.
                     </p>
                   </div>
                 </div>

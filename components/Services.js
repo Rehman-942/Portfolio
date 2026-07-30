@@ -23,7 +23,8 @@ const Services = () => {
                   Web App Development
                 </p>
                 <p>
-                  Creating responsive and high-performance web applications tailored to your needs.
+                  Creating responsive and high-performance full-stack web applications
+                  using React, Next.js, Node.js, and NestJS tailored to your needs.
                 </p>
               </div>
             </div>
@@ -31,12 +32,13 @@ const Services = () => {
           <div className="col-xl-4">
             <div className="mil-icon-box mil-mb-60">
               <div className="mil-text-icon">
-                <i className="fas fa-palette" />
+                <i className="fas fa-robot" />
               </div>
               <div className="mil-box-text">
-                <p className="mil-upper mil-text-lg mil-mb-15">Mobile Apps</p>
+                <p className="mil-upper mil-text-lg mil-mb-15">AI Integration</p>
                 <p>
-                  Developing user-friendly mobile applications that enhance engagement and accessibility.
+                  Integrating OpenAI and custom ML models to build intelligent chat assistants,
+                  automated content generation pipelines, and recommendation systems.
                 </p>
               </div>
             </div>
@@ -44,14 +46,15 @@ const Services = () => {
           <div className="col-xl-4">
             <div className="mil-icon-box mil-mb-30">
               <div className="mil-text-icon">
-                <i className="fas fa-server" />
+                <i className="fas fa-comments" />
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
                   AI Chatbot
                 </p>
                 <p>
-                  Building intelligent chatbots to streamline customer interactions and improve support.
+                  Building intelligent chatbots to streamline customer interactions,
+                  automate support workflows, and improve engagement.
                 </p>
               </div>
             </div>
@@ -59,14 +62,15 @@ const Services = () => {
           <div className="col-xl-4">
             <div className="mil-icon-box mil-mb-30">
               <div className="mil-text-icon">
-                <i className="fas fa-server" />
+                <i className="fas fa-puzzle-piece" />
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
                   Chrome Extensions
                 </p>
                 <p>
-                  Create custom Chrome extensions to enhance browser functionality and improve user experience.
+                  Create custom Chrome extensions to enhance browser functionality
+                  and improve user experience with production-grade quality.
                 </p>
               </div>
             </div>
@@ -78,10 +82,11 @@ const Services = () => {
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Server Management
+                  Backend &amp; APIs
                 </p>
                 <p>
-                  Ensuring seamless server operations with expert management and optimization.
+                  Designing scalable REST APIs and backend architectures with Node.js,
+                  NestJS, PostgreSQL, MongoDB, and Firebase for robust performance.
                 </p>
               </div>
             </div>
@@ -89,14 +94,15 @@ const Services = () => {
           <div className="col-xl-4">
             <div className="mil-icon-box mil-mb-30">
               <div className="mil-text-icon">
-                <i className="fas fa-server" />
+                <i className="fas fa-cloud-upload-alt" />
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Wordpress
+                  Deployment &amp; DevOps
                 </p>
                 <p>
-                  Delivering customized WordPress sites that are both functional and visually appealing.
+                  Managing end-to-end deployment workflows using Docker, GitHub Actions,
+                  Vercel, Cloudflare Workers, and Firebase Functions.
                 </p>
               </div>
             </div>

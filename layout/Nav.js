@@ -39,7 +39,7 @@ const Nav = () => {
           </li>
           <a
             className="mil-button"
-            href="https://drive.google.com/file/d/1aSDSMdbiFJnDYgACL8T9A544YGr1pdlC/view?usp=sharing"
+            href="https://drive.google.com/file/d/1GkCT-eYMfbYzsY0GYJM9wCGQkEFbUida/view?usp=sharing"
             target="_blank"
           >
             Download CV

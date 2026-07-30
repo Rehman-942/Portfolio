@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${jost.variable}`}>
       <Head>
         <title>Rehman Afzal - Portfolio</title>
-        <meta name="description" content="Portfolio to showcase website development skills and projects" />
+        <meta name="description" content="Rehman Afzal — JavaScript Developer with 3+ years experience in full-stack web development, AI integration, Node.js, React, NestJS, and OpenAI APIs." />
       </Head>
       <body className="mil-custom-scroll">
         {children}

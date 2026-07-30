@@ -9,70 +9,51 @@ const Education = () => {
         <div className="row justify-content-between">
           <div className="col-xl-5 mil-mb-60">
             <div className="mil-text-right-adapt">
-              <p className="mil-upper mil-mb-30">Certificates</p>
+              <p className="mil-upper mil-mb-30">Academic Background</p>
               <h2 className="mil-up mil-mb-60">Education</h2>
               <p>
-                Extensive education in developing web applications using: HTML5, CSS3,
-                JavaScript, MERN Stack (React JS and Node Js), Svelte Js, JQuery, PostgreSQL, MongoDB
-                Bootstrap, Wordpress.
+                Formally educated in Computer Science and Electrical Engineering,
+                with strong academic grounding in software development, systems
+                design, algorithms, and emerging technologies including AI and
+                machine learning.
               </p>
             </div>
           </div>
           <div className="col-xl-6">
             <div className="mil-icon-box mil-mb-40">
               <div className="mil-text-icon">
-                <a href="img/certificate.jpg" className="mfp-image">
-                  +
-                </a>
+                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>MS</span>
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Backend Programming
+                  MS Computer Science &amp; Technology
                 </p>
                 <p className="mil-upper mil-upper-sm mil-mb-30">
-                  2020 <span className="mil-accent">to</span> 2021
+                  Ulster University, London &mdash; Sept 2025 <span className="mil-accent">to</span> Sept 2026
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining unchanged.
-                </p>
-              </div>
-            </div>
-            <div className="mil-icon-box mil-mb-40">
-              <div className="mil-text-icon">
-                <a href="img/certificate.jpg" className="mfp-image">
-                  +
-                </a>
-              </div>
-              <div className="mil-box-text">
-                <p className="mil-upper mil-text-lg mil-mb-15">
-                  Master in Graphic
-                </p>
-                <p className="mil-upper mil-upper-sm mil-mb-30">
-                  2019 <span className="mil-accent">to</span> 2020
-                </p>
-                <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining unchanged.
+                  Pursuing advanced studies in computer science and technology at the
+                  London Campus of Ulster University, with a focus on software engineering,
+                  AI, and modern computing systems.
                 </p>
               </div>
             </div>
             <div className="mil-icon-box">
               <div className="mil-text-icon">
-                <a href="img/certificate.jpg" className="mfp-image">
-                  +
-                </a>
+                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>BS</span>
               </div>
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Bachelors in Electrical Engineering
+                  BS Electrical Engineering
                 </p>
                 <p className="mil-upper mil-upper-sm mil-mb-30">
-                  NUST, Pakistan 2018 <span className="mil-accent">to</span> 2022
+                  NUST, Pakistan &mdash; Sept 2018 <span className="mil-accent">to</span> Jun 2022
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining unchanged.
+                  Completed a Bachelor of Science in Electrical Engineering at the
+                  National University of Sciences and Technology (NUST), Pakistan,
+                  building a strong foundation in systems, programming, and engineering
+                  principles.
                 </p>
               </div>
             </div>

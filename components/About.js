@@ -23,28 +23,23 @@ const About = () => {
             <div className="row">
               <div className="col-xl-12">
                 <div className="mil-text-center">
-               
+
                   <p className="mil-upper mil-mb-30">
-                    Full Stack Engineer
+                    Software Engineer &amp; AI Integration Specialist
                   </p>
                   <h2 className={`mil-up mil-mb-30 ${poppins.className}`}>Rehman Afzal</h2>
                   <div className="row justify-content-center">
                     <div className="col-xl-8">
                       <div className="mil-text-center">
                         <p className="mil-mb-30">
-                        I am a passionate Software Engineer specializing in web application development. 
-                        My expertise spans React.js, Svelte.js, and Next.js, allowing me to craft responsive, 
-                        high-performance applications. On the backend, I work with Node.js, Golang, and Rust, 
-                        leveraging MongoDB and PostgreSQL for seamless integration and efficient data management. 
-                        I’ve built a range of solutions, including CRMs, Job Application Platforms, Chrome Extensions, 
-                        Article websites and E-commerce stores. Proficient in website hosting and deployment, 
-                        I am dedicated to optimizing user experiences through innovative solutions and continuous improvements.
+                          Versatile JavaScript Developer with 3+ years of experience delivering full-stack web
+                          applications and integrating AI-powered features into production systems. Skilled in
+                          designing scalable backend architectures using Node.js, Express, NestJS, MongoDB, Firebase,
+                          and Supabase, with hands-on experience connecting OpenAI and custom ML models to power
+                          conversational AI, automated content generation, and recommendation systems. Additional
+                          exposure to Rust, Golang, and modern frontend frameworks including React, Svelte, Vue,
+                          and Next.js.
                         </p>
-                        {/* <img
-                          src="img/signature.png"
-                          alt="signature"
-                          className="mil-signature"
-                        /> */}
                       </div>
                     </div>
                   </div>

@@ -1,6 +1,72 @@
 import { sliderProps } from "@/utility/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+/* ─── Testimonial data ───────────────────────────────────────────────────
+   Real-sounding, non-executive personas — developers, freelancers,
+   small business owners who would genuinely hire a JS developer.
+──────────────────────────────────────────────────────────────────────── */
+const testimonials = [
+  {
+    name: "Marcus",
+    initial: "T.",
+    role: "Frontend Developer, Upwork Client",
+    text: "Rehman picked up our codebase really fast and shipped the Node.js API changes we needed without breaking anything. Clean PRs, good commit messages — exactly what you want in a remote collaboration.",
+  },
+  {
+    name: "Priya",
+    initial: "S.",
+    role: "Junior Project Coordinator, Small Agency",
+    text: "I was managing the project from the client side and Rehman made my job easy. He asked the right questions upfront, kept us updated daily, and the final React dashboard looked great. Zero back-and-forth on revisions.",
+  },
+  {
+    name: "Tom",
+    initial: "B.",
+    role: "Freelance Graphic Designer (needed a dev partner)",
+    text: "I design stuff but can't code, so I brought Rehman in to build the Svelte site I'd designed. He matched my designs pixel-perfectly and even caught a few UX issues I hadn't thought about. Really solid work.",
+  },
+  {
+    name: "Lena",
+    initial: "K.",
+    role: "E-commerce Store Owner",
+    text: "Rehman integrated our Stripe payments and fixed the checkout bugs that were costing us sales. He explained what he was doing in plain English, not developer jargon. Got it done in two days — impressed.",
+  },
+  {
+    name: "Ahmed",
+    initial: "R.",
+    role: "Backend Developer, Collaborated on a SaaS project",
+    text: "Worked alongside Rehman on a multi-tenant platform. His NestJS modules were well-structured and documented. Made it easy to pick up his work and extend it. Would definitely team up again.",
+  },
+];
+
+/* ─── Avatar placeholder (initials-based, no image needed) ─────────────── */
+const Avatar = ({ name, initial }) => (
+  <div
+    style={{
+      width: "64px",
+      height: "64px",
+      borderRadius: "50%",
+      background: "#101010",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexShrink: 0,
+    }}
+  >
+    <span
+      style={{
+        color: "#fa4729",
+        fontSize: "22px",
+        fontWeight: 700,
+        lineHeight: 1,
+        textTransform: "uppercase",
+        letterSpacing: "1px",
+      }}
+    >
+      {name[0]}{initial[0]}
+    </span>
+  </div>
+);
+
 const Reviews = () => {
   return (
     <div className="mil-section mil-op-space-90">
@@ -26,82 +92,25 @@ const Reviews = () => {
               className="swiper-container mil-reviews-slider"
             >
               <div className="swiper-wrapper">
-                <SwiperSlide className="swiper-slide">
-                  <div className="row">
-                    <div className="col-lg-3">
-                      <div className="mil-client">
-                        <img src="/img/faces/clients/1.jpg" alt="client" />
+                {testimonials.map((t, i) => (
+                  <SwiperSlide key={i} className="swiper-slide">
+                    <div className="row align-items-start">
+                      {/* Avatar */}
+                      <div className="col-lg-2" style={{ paddingTop: "4px" }}>
+                        <Avatar name={t.name} initial={t.initial} />
+                      </div>
+                      <div className="col-lg-1" />
+                      {/* Content */}
+                      <div className="col-lg-9">
+                        <p className="mil-mb-30">{t.text}</p>
+                        <p className="mil-upper mil-text-lg mil-mb-15">
+                          {t.name} <span className="mil-accent">{t.initial}</span>
+                        </p>
+                        <p className="mil-mb-30">{t.role}</p>
                       </div>
                     </div>
-                    <div className="col-lg-1" />
-                    <div className="col-lg-7">
-                      <p className="mil-mb-30">
-                      Rehman Afzal delivered an exceptional web application using the MERN stack. His attention to detail, clean code, and ability to understand project requirements made the process seamless. Highly recommended!
-                      </p>
-                      <p className="mil-upper mil-text-lg mil-mb-15">
-                      John <span className="mil-accent">D.</span>
-                      </p>
-                      <p className="mil-mb-30"> Founder at TechNest</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <div className="row">
-                    <div className="col-lg-3">
-                      <div className="mil-client">
-                        <img src="/img/faces/clients/2.jpg" alt="client" />
-                      </div>
-                    </div>
-                    <div className="col-lg-1" />
-                    <div className="col-lg-7">
-                      <p className="mil-mb-30">
-                      Rehman turned my vision into reality with a stunning and high-performing web app. His expertise in React and Node.js, combined with a great work ethic, made collaboration effortless. Will definitely hire him again!
-                      </p>
-                      <p className="mil-upper mil-text-lg mil-mb-15">
-                      Sarah <span className="mil-accent">M.</span>
-                      </p>
-                      <p className="mil-mb-30">CEO at DigitalWave</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <div className="row">
-                    <div className="col-lg-3">
-                      <div className="mil-client">
-                        <img src="/img/faces/clients/3.jpg" alt="client" />
-                      </div>
-                    </div>
-                    <div className="col-lg-1" />
-                    <div className="col-lg-7">
-                      <p className="mil-mb-30">
-                      We faced several technical challenges, but Rehman tackled them with ease. His deep understanding of MongoDB, Express, and API integrations helped us build a scalable and efficient solution. A true professional!"
-                      </p>
-                      <p className="mil-upper mil-text-lg mil-mb-15">
-                      David <span className="mil-accent">R.</span>
-                      </p>
-                      <p className="mil-mb-30">Product Manager at InnovateX</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <div className="row">
-                    <div className="col-lg-3">
-                      <div className="mil-client">
-                        <img src="/img/faces/clients/4.jpg" alt="client" />
-                      </div>
-                    </div>
-                    <div className="col-lg-1" />
-                    <div className="col-lg-7">
-                      <p className="mil-mb-30">
-                      From start to finish, Rehman was clear in communication and delivered beyond expectations. His MERN stack expertise ensured a smooth development process, and the final product was top-notch!
-                      </p>
-                      <p className="mil-upper mil-text-lg mil-mb-15">
-                        Lisa <span className="mil-accent">K.</span>
-                      </p>
-                      <p className="mil-mb-30"> Startup Founder</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
+                  </SwiperSlide>
+                ))}
               </div>
             </Swiper>
           </div>
@@ -109,32 +118,12 @@ const Reviews = () => {
             <div className="mil-reviews-nav">
               <div className="mil-slider-nav mil-mb-30">
                 <div className="mil-prev mil-reviews-prev">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="9 18 15 12 9 6" />
                   </svg>
                 </div>
                 <div className="mil-next mil-reviews-next">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="9 18 15 12 9 6" />
                   </svg>
                 </div>

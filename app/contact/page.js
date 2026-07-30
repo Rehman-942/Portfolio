@@ -1,34 +1,28 @@
 "use client";
 
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 import PortfolioLayout from "@/layout/PortfolioLayout";
+import StatusPopup from "@/components/StatusPopup";
+import { sendContactEmail } from "@/utility/sendEmail";
 
 const page = () => {
   const form = useRef();
+  const [popup, setPopup] = useState(null);   // null | "success" | "error"
+  const [sending, setSending] = useState(false);
 
-  const sendEmail = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs.sendForm(
-      "service_jumfcub",  // EmailJS service ID
-      "template_m5guv9i", // EmailJS template ID
-      form.current,
-      "v_cio44FtDNs83qLs"   // EmailJS public key
-    ).then(
-        (result) => {
-          console.log(result.text);
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Failed to send the message, please try again.");
-        }
-      );
+    setSending(true);
+    const result = await sendContactEmail(form);
+    setSending(false);
+    setPopup(result);
+    if (result === "success") form.current.reset();
   };
 
   return (
     <PortfolioLayout noFooter>
+      {popup && <StatusPopup type={popup} onClose={() => setPopup(null)} />}
+
       <div>
         <div className="mil-page">
           <div
@@ -40,8 +34,8 @@ const page = () => {
               <p className="mil-upper mil-mb-30">
                 Contact <span className="mil-accent">me</span>
               </p>
-              <h2 className="mil-up mil-mb-30">Let's get you an estimate</h2>
-              <p className="">
+              <h2 className="mil-up mil-mb-30">Let&apos;s get you an estimate</h2>
+              <p>
                 Contact us today for a personalized estimate tailored to your project needs!
               </p>
             </div>
@@ -54,8 +48,8 @@ const page = () => {
                     </p>
                     <p>
                       Rehman Afzal <br />
-                      Full Stack Engineer <br />
-                      Lahore, Pakistan
+                      Software Engineer <br />
+                      London, UK
                     </p>
                   </div>
                   <div className="mil-contact-card mil-mb-30">
@@ -67,16 +61,16 @@ const page = () => {
                   <div className="mil-contact-card mil-mb-30">
                     <p className="mil-upper mil-mb-30">Chats</p>
                     <p>
-                      <a href="https://wa.me/923460940149" target="_blank">WhatsApp</a> +92 346 0940149
+                      <a href="https://wa.me/447908717256" target="_blank">WhatsApp +44 7908 717256</a>
                     </p>
                   </div>
                   <div className="mil-contact-card mil-mb-90">
                     <p className="mil-upper mil-mb-30">Phone</p>
-                    +92 346 094 0149
+                    +44 7908 717 256
                   </div>
                 </div>
                 <div className="col-lg-7">
-                  <form ref={form} onSubmit={sendEmail} id="cform" className="cform" method="post">
+                  <form ref={form} onSubmit={handleSubmit} id="cform" className="cform" method="post">
                     <label className="mil-upper">
                       Your full name <span className="mil-accent">*</span>
                     </label>
@@ -97,13 +91,15 @@ const page = () => {
                       Tell me your ideas <span className="mil-accent">*</span>
                     </label>
                     <textarea className="mil-mb-30" name="message" required />
-                    <button type="submit" className="mil-button">
-                      Submit
+                    <button
+                      type="submit"
+                      className="mil-button"
+                      disabled={sending}
+                      style={{ opacity: sending ? 0.6 : 1, cursor: sending ? "not-allowed" : "pointer" }}
+                    >
+                      {sending ? "Sending..." : "Submit"}
                     </button>
                   </form>
-                  <div className="alert-success" style={{ display: "none" }}>
-                    <h5>Thanks, your message is sent successfully.</h5>
-                  </div>
                 </div>
               </div>
             </div>

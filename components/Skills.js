@@ -39,7 +39,7 @@ const Skills = () => {
                   </div>
                   <div className="mil-progress-inline">
                     <span className="mil-upper mil-capitalize">
-                      JavaScript, Golang, Rust
+                      JavaScript, TypeScript, Golang, Rust
                     </span>
                     <div className="mil-progress-track"></div>
                   </div>
@@ -54,7 +54,7 @@ const Skills = () => {
                   </div>
                   <div className="mil-progress-inline">
                     <span className="mil-upper mil-capitalize">
-                      React Js, Svelte Js, Vue Js
+                      React Js, Next.js, Svelte Js, Vue Js
                     </span>
                     <div className="mil-progress-track"></div>
                   </div>
@@ -68,7 +68,7 @@ const Skills = () => {
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper mil-capitalize">Node Js</span>
+                    <span className="mil-upper mil-capitalize">Node.js, Express.js, NestJS</span>
                     <div className="mil-progress-track"></div>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ const Skills = () => {
                   </div>
                   <div className="mil-progress-inline">
                     <span className="mil-upper mil-capitalize">
-                      PostgreSQL, MongoDB
+                      PostgreSQL, MongoDB, MySQL, Supabase
                     </span>
                     <div className="mil-progress-track"></div>
                   </div>
@@ -92,12 +92,12 @@ const Skills = () => {
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
-                      <i className="fab fa-jenkins" />
+                      <i className="fas fa-robot" />
                     </div>
                   </div>
                   <div className="mil-progress-inline">
                     <span className="mil-upper mil-capitalize">
-                      Jenkins, Cloudflare, Firebase
+                      OpenAI API, LLM Integration, Prompt Engineering
                     </span>
                     <div className="mil-progress-track"></div>
                   </div>
@@ -107,11 +107,11 @@ const Skills = () => {
                 <div className="mil-text-row">
                   <div className="mil-icon-box">
                     <div className="mil-text-icon no-textured">
-                      <i className="fab fa-wordpress" />
+                      <i className="fab fa-docker" />
                     </div>
                   </div>
                   <div className="mil-progress-inline">
-                    <span className="mil-upper mil-capitalize">Wordpress</span>
+                    <span className="mil-upper mil-capitalize">Docker, GitHub Actions, Vercel, Firebase, Cloudflare</span>
                     <div className="mil-progress-track"></div>
                   </div>
                 </div>

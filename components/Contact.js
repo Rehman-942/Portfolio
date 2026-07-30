@@ -1,35 +1,27 @@
-"use client"; // Ensures this is treated as a Client Component
+"use client";
 
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import StatusPopup from "@/components/StatusPopup";
+import { sendContactEmail } from "@/utility/sendEmail";
 
 const Contact = () => {
   const form = useRef();
-  const [messageSent, setMessageSent] = useState(false);
+  const [popup, setPopup] = useState(null);   // null | "success" | "error"
+  const [sending, setSending] = useState(false);
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm(
-        "service_jumfcub",  // EmailJS service ID
-        "template_m5guv9i", // EmailJS template ID
-        form.current,
-        "v_cio44FtDNs83qLs"   // EmailJS public key
-      ).then(
-          (result) => {
-            console.log(result.text);
-            setMessageSent("Message sent successfully!");
-          },
-          (error) => {
-            console.log(error.text);
-            alert("Failed to send the message, please try again.");
-          }
-        );
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSending(true);
+    const result = await sendContactEmail(form);
+    setSending(false);
+    setPopup(result);
+    if (result === "success") form.current.reset();
+  };
 
   return (
     <div className="mil-section mil-op-space-90">
+      {popup && <StatusPopup type={popup} onClose={() => setPopup(null)} />}
+
       <div
         className="mil-bg-item"
         style={{ bottom: "-5%", right: 0, transform: "rotate(-25deg)" }}
@@ -38,7 +30,7 @@ const Contact = () => {
         <p className="mil-upper mil-mb-30">
           Contact <span className="mil-accent">me</span>
         </p>
-        <h2 className="mil-up mil-mb-60">Let's get you an estimate</h2>
+        <h2 className="mil-up mil-mb-60">Let&apos;s get you an estimate</h2>
         <div className="row justify-content-between">
           <div className="col-lg-4">
             <div className="mil-contact-card mil-mb-30">
@@ -49,12 +41,11 @@ const Contact = () => {
             </div>
             <div className="mil-contact-card mil-mb-30">
               <p className="mil-upper mil-mb-30">Phone</p>
-              <p>+92 346 094 0149</p>
+              <p>+44 7908 717256</p>
             </div>
           </div>
           <div className="col-lg-7">
-            {/* Contact form */}
-            <form ref={form} onSubmit={sendEmail} id="cform-two" className="cform-two" method="post">
+            <form ref={form} onSubmit={handleSubmit} id="cform-two" className="cform-two" method="post">
               <div className="row">
                 <div className="col-lg-6">
                   <label className="mil-upper">
@@ -80,18 +71,17 @@ const Contact = () => {
                   />
                 </div>
                 <div className="col-lg-12 mil-text-row">
-                  <button type="submit" className="mil-button">
-                    Submit
+                  <button
+                    type="submit"
+                    className="mil-button"
+                    disabled={sending}
+                    style={{ opacity: sending ? 0.6 : 1, cursor: sending ? "not-allowed" : "pointer" }}
+                  >
+                    {sending ? "Sending..." : "Submit"}
                   </button>
                 </div>
               </div>
             </form>
-            {/* Success message */}
-            {messageSent && (
-              <div className="alert-success">
-                <h5>Thanks, your message is sent successfully.</h5>
-              </div>
-            )}
           </div>
         </div>
       </div>

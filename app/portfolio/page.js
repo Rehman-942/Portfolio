@@ -22,7 +22,7 @@ const page = () => {
               </p>
               <h2 className="mil-up mil-mb-30">Portfolio</h2>
               <p className="mil-left-offset">
-                A Collection of my favorites project I’ve designed recently.{" "}
+                A Collection of my favorites project I’ve developed.{" "}
                 <br />
                 Feeling great while sharing here.
               </p>
